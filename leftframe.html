@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>frames</title>
+</head>
+
+<style>
+    .innerdiv{
+        text-align: center;
+        margin: 100px;
+
+    }
+    .greenbtn{
+        background-color: rgba(16, 170, 16);
+        color: white;
+        width: 95%;
+        height: 40px;
+        margin-top: 8px;
+    }
+    .leftinnerdiv{
+        float: left;
+        width: 55%;
+    }
+
+   </style>
+<body>
+    
+
+
+
+ 
+<div class="container">
+<div class="innerdiv">
+<div class="innerdiv"><h1>DASHBOARD</h1></div>
+<div class="leftinnerdiv">
+
+ <a href="login.php" target="right"><button class="greenbtn">All Books</button> </a>
+ <button class="greenbtn">Student List</button> 
+ <button class="greenbtn">Issue Requests</button>   
+ <button class="greenbtn">Return Requets</button>
+ <button class="greenbtn">Penalty</button> 
+ <a href="index.html"><button class="greenbtn">Logout</button></a>        
+
+
+</div>
+</div>
+</div>  
+<script>
+    function openpart(portion){
+        var i;
+        var x = document.getElementByClassName("portion");
+        for(i=0; i<x.length; i++){
+            x[i].style.display="none";
+        }
+        document.getElementById(portion).style.display="block";
+    }
+</script>
+</body>     
+
+</html>
+
